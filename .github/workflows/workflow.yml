@@ -19,7 +19,8 @@ env:
   DATABASE_NAME: demo-webappsql-gh-actions-db                   # set this to your preferred sql database name
   SQLADMIN_LOGIN: ${{ secrets.SQLADMIN_LOGIN  }}                # Create a secret in your Github repo for the SQL Admin login name you want to use
   SQLADMIN_PASS: ${{ secrets.SQLADMIN_PASS  }}                 # Create a secret in your Github repo for the SQL Admin password you want to use
-  
+
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
