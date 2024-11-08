@@ -5,6 +5,10 @@ on:
         - 'ARM/**'
         - '.github/workflows/infraworkflow.yml'
 
+permissions:
+  id-token: write
+  contents: read
+
 env:
     AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID  }}    # set this to your Azure Subscription Id
     AZURE_RESOURCEGROUP_NAME: mn-test-github-actions-1                 # set this to your preferred resource group name
