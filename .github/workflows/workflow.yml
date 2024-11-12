@@ -11,9 +11,11 @@ permissions:
       contents: read
       
 env:
-  AZURE_WEBAPP_NAME: my-app    # set this to your application's name
+  AZURE_WEBAPP_NAME: demo-webappsql-gh-actions-unique-mnee     # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '6.0.x'           # set this to the dot net version to use
+  AZURE_RESOURCEGROUP_NAME: mnee-github-actions-rg            # set this to your preferred resource group name
+  ASP_NAME: demo-webappsql-gh-actions-mnee
 
 jobs:
   build:
